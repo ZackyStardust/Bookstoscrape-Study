@@ -23,10 +23,3 @@ books['total_value'] = ''
 for index in books.index:
 	books.loc[index, 'total_value'] = float(books.loc[index, 'price']) * int(books.loc[index, 'avaliability'])
 	books.loc[index, 'total_value'] = round(float(books.loc[index, 'total_value']), 2)
-
-#final_sum = 0
-#for index in books.index:
-#	final_sum = final_sum + float(books.loc[index, 'total_value'])
-#books.loc[len(books)] = ['', '', 'Total Sum', '', '', '', '', '']
-#books.loc[1000, 'total_value'] = final_sum
-#books.to_csv('books_altered.csv', index=False)
